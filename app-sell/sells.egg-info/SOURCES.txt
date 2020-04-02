@@ -1,0 +1,8 @@
+sells.py
+setup.py
+sells.egg-info/PKG-INFO
+sells.egg-info/SOURCES.txt
+sells.egg-info/dependency_links.txt
+sells.egg-info/entry_points.txt
+sells.egg-info/requires.txt
+sells.egg-info/top_level.txt

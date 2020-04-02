@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        sells=sells:cli
+    

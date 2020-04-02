@@ -31,6 +31,17 @@ class ClientService:
         
         self._save_to_disk(updated_clients)
 
+    def delete_client(self, client_to_delete):
+        clients = self.list_clients()
+
+        updated_clients = []
+        for client in clients:
+            if client['uid'] != client_to_delete.uid:
+                updated_clients.append(client)
+        
+        self._save_to_disk(updated_clients)
+
+
     def _save_to_disk(self, clients):
         tmp_table_name = self.table_name + '.tmp'
         with open(tmp_table_name, mode='a') as f:

@@ -14,7 +14,7 @@ def password_required(func):
 
 @password_required
 def needs_password():
-    print('Correct Password')
+    print('Correct Password')    
 
 
 if __name__ == '__main__':
